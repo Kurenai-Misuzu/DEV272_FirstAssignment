@@ -20,6 +20,7 @@ export default function TabTwoScreen() {
       </ThemedView>
       <ThemedText>This is my new page!</ThemedText>
       <Button
+        onPress={() => alert("wau")}
         title="Wau!"
         color='#841584'
         accessibilityLabel='This is a test button'
