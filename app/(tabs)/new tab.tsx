@@ -1,13 +1,14 @@
-import { StyleSheet, Image, Platform } from 'react-native';
+import { StyleSheet, Image, Platform, Button } from 'react-native';
 
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
+import { RectButton } from 'react-native-gesture-handler';
 
 export default function TabTwoScreen() {
   return (
     <ParallaxScrollView
-      headerBackgroundColor={{ light: '#D0D0D0', dark: '#353636' }}
+      headerBackgroundColor={{ light: '#A1CEDC', dark: '#1D3D47' }}
       headerImage={
         <Image
           source={require('@/assets/images/partial-react-logo.png')}
@@ -18,6 +19,11 @@ export default function TabTwoScreen() {
         <ThemedText type="title">New Page</ThemedText>
       </ThemedView>
       <ThemedText>This is my new page!</ThemedText>
+      <Button
+        title="Wau!"
+        color='#841584'
+        accessibilityLabel='This is a test button'
+      />
     </ParallaxScrollView>
   );
 }
